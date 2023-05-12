@@ -1,2 +1,16 @@
 /* font-family: 'Sen', sans-serif; 
 CSS rules to specify families */
+
+h1{
+    font-family: 'Sen', sans-serif;
+    font-size: 48px;
+}
+
+/* CSS Colors
+h1{
+    color: #232536;
+    color: #FFD050;
+    color: #592EA9;
+    color: #4C4C4C;
+    color: #6D6E76;
+} */
