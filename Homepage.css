@@ -8,6 +8,11 @@ html{
 }
 
 header {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
     width: 100%;
     height: 80px;
     display: flex;
@@ -23,7 +28,7 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo-area .logo{
   margin: 0;
   margin-left: 20px;
   width: 200px;
@@ -54,29 +59,380 @@ header {
     font-size: 20px;
 }
 
-main .section1 img{
-    position: absolute; 
-    /* Esconde as 2 primeiras imagens */
-    width: 100%;
+.container1{
+    position: relative;
+    width: 1440px;
     height: 720px;
-    margin-top: 80px;
-    margin-right: 0px;
 }
 
+.container1 .images{
+    position: absolute;
+    width: 1440px;
+    height: 720px;
+    right: 0px;
+    top: 80px;
+}
 
-/* font-family: 'Sen', sans-serif; 
-CSS rules to specify families */
+.container1 .title1{
+    position: absolute;
+    /* Esconde as 2 textos */
+    width: 222px;
+    height: 20px;
+    right: 1137px;
+    top: 208px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+}
 
-/* h1{
-    font-family: 'Sen', sans-serif;
-    font-size: 48px;
-} */
+.container1 h2{
+    position: absolute;
+    /* Esconde as 2 textos */
+    width: 803px;
+    height: 128px;
+    right: 556px;
+    top: 252px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+}
 
-/* CSS Colors
-h1{
+.container1 .text2{
+    position: absolute;
+    /* Esconde as 2 textos */
+    width: 243px;
+    height: 28px;
+    right: 1116px;
+    top: 404px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.container1 .text3{
+    position: absolute;
+    /* Esconde as 2 textos */
+    width: 599px;
+    height: 56px;
+    right: 761px;
+    top: 448px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.container1 button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 48px;
+    gap: 12px;
+    position: absolute;
+    width: 204px;
+    height: 56px;
+    left: 80px;
+    top: 552px;
+    background: #FFD050;
+}
+
+.container2{
+    display: flex;
+    position: relative;
+}
+
+.container2 .container3{
+    position: absolute;
+    width: 223px;
+    height: 48px;
+    right: 1137px;
+    top: 928px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
     color: #232536;
-    color: #FFD050;
-    color: #592EA9;
+}
+
+.container2 .container3 .featured1 img{
+    /* position: absolute; */
+    width: 669px;
+    height: 352px;
+    right: 659px;
+    top: 1040px;
+}
+
+.container2 .container3 .featured1 label{
+    /* position: absolute; */
+    width: 202px;
+    height: 20px;
+    right: 1126px;
+    top: 1424px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
     color: #4C4C4C;
+}
+
+.container2 .container3 .featured1 h3{
+    /* position: absolute; */
+    width: 669px;
+    height: 80px;
+    right: 659px;
+    top: 1460px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+}
+
+ .container3 .featured1 p{
+    /* position: absolute; */
+    width: 551px;
+    height: 56px;
+    right: 777px;
+    top: 1556px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
     color: #6D6E76;
-} */
+}
+
+.container2 .container4{
+    position: absolute;
+    width: 133px;
+    height: 48px;
+    right: 462px;
+    top: 928px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.container2 .container4 .posts1 label{
+    /* position: absolute; */
+    width: 199px;
+    height: 20px;
+    right: 364px;
+    top: 1040px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+
+.container2 .container4 .posts1 h4{
+    /* position: absolute; */
+    width: 369px;
+    height: 96px;
+    right: 194px;
+    top: 1068px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+}
+
+.container4 .posts1 .square{
+    position: absolute;
+    width: 517px;
+    height: 181px;
+    right: -380px;
+    /* top: 1189px; */
+    background: #FBF6EA;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+.container5 {
+    display: flex;
+    position: relative;
+    align-content: center;
+}
+
+.container5 .container6{
+    display: flex;
+    position: absolute;
+    width: 1280px;
+    height: 500px;
+    right: 80px;
+    top: 1883px;
+    background: #F4F0F8;
+}
+
+.container5 .container6 .about h6{
+    /* position: absolute; */
+    width: 104px;
+    height: 20px;
+    right: 1176px;
+    top: 1979px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #232536;
+}
+
+.container5 .container6 .about h2{
+    /* position: absolute; */
+    width: 494px;
+    height: 144px;
+    right: 786px;
+    top: 2023px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.container5 .container6 .about p{
+    /* position: absolute; */
+    width: 515px;
+    height: 56px;
+    right: 765px;
+    top: 2183px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+.container5 .mission{
+    position: absolute;
+    width: 124px;
+    height: 20px;
+    right: 579px;
+    top: 1981px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #232536;
+}
+
+.container5 .mission h6{
+    /* position: absolute; */
+    width: 124px;
+    height: 20px;
+    right: 579px;
+    top: 1981px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #232536;
+}
+
+.container5 .mission h3{
+    /* position: absolute; */
+    width: 481px;
+    height: 80px;
+    right: 223px;
+    top: 2025px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #232536;
+}
+
+.container5 .mission p{
+    /* position: absolute; */
+    width: 516px;
+    height: 108.73px;
+    right: 188px;
+    top: 2121px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6D6E76;
+}
+
+.container7 {
+    display: flex;
+    position: relative;
+    float: inline-start;
+}
+
+.container7 h2{
+    position: absolute;
+    width: 302px;
+    height: 48px;
+    right: 569px;
+    top: 2511px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+}
+
+.container7 h2 .box1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 296px;
+    height: 228px;
+    right: 1064px;
+    top: 2607px;
+    opacity: 0.3;
+    border: 1px solid #6D6E76;
+}
+
+.container7 h2 .box1 img{
+    position: absolute;
+    left: 25%;
+    right: 44.79%;
+    top: 25.46%;
+    bottom: 24.91%;
+    background: #232536;
+}
