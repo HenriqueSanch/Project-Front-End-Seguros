@@ -1,90 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finsweet-Contact</title>
+    <title>Finsweet-Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Contact.css">
+    <link rel="stylesheet" href="Contact.css">
 </head>
+
 <body>
-
-<header>
-    <div class="logo-area">
-        <img class="logo" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
-    </div>
-    <nav class="desktop-menu">        
-        <div>
-            <ul>
-                <li><a href="Homepage.html">Home</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Blogpost.html">About Us</a></li>
-                <li><a href="Contact.html">Contact us</a></li>
-                <li><button>Subscrive</button></li>
-            </ul>
+    <p class="space"></p>
+    <header>
+        <div class="logo-area">
+            <img class="logo" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
         </div>
-    </nav>
-</header>
+        <nav class="desktop-menu">
+            <div>
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Blogpost.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><button class="button">Subscrive</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<main>    
+<main> 
+    
     <section>
-        <h5>CONTACT US</h5>
-            <h1>Lets Start a Conversation</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="flex-container1">
+            <div class="flex-item1">
+                <h5>CONTACT US</h5>
+                    <h1>Lets Start a Conversation</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- <section>
-        <p>Working hours</p>
-            <h5>Monday To Friday</h5>
-            <h5>9:00 AM to 8:00 PM</h5>
-            <p>Our Support Tean is available 24/7</p>
+    <section>
+        <div class="flex-container2">
+            <div class="flex-container3">
+                <div class="flex-item2">
+                        <p class="work">Working hours</p>
 
-        <p>Contact Us</p>
-            <h5>020 7993 2905</h5>
-            <p>Our Support Tean is available 24/7</p>
+                    <hr>
+                            <h5 class="days">Monday To Friday</h5>
+                            <h5>9:00 AM to 8:00 PM</h5>
+                            <p>Our Support Tean is available 24/7</p>
+                </div>
+
+                        <div class="flex-item3">
+                            <p class="call">Contact Us</p>
+                            <hr>
+                                <h5>020 7993 2905</h5>
+                                <p>hello@finsweet.com</p>
+                        </div>
+                    
+            </div>
+        </div>
     </section>
 
-    <button>Full Name</button>
-    <button>Your Email</button>
-    <button>Query Related</button>
-    <button>Message</button>
-    <button>Send Message</button>
+        <form>
+
+            <section>
+                <label>
+                    <input name="name" id="name" type="text" required value="Full Name">
+                </label>
+            </section>
+
+            <section>
+                <label>
+                    <input name="email" id="email" type="email" required value="Your Email">
+                </label>
+            </section>
+
+            <section>
+                <label >
+                    <input name="email" id="query" type="email" required value="Query Related">
+                </label>
+            </section>
+
+            <section>
+                <label>
+                    <input name="message" id="message" required value="Message">
+                </label>
+            </section>
+
+            <button type="submit">Send Message</button>
+
+        </form>
 </main>
 
-<footer>
-    <div>
-        <img src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
-        <ul>
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Blogpost.html">About Us</a></li>
-            <li><a href="Contact.html">Contact us</a></li>
-            <li>Subscribe</li>
-        </ul>
-    </div>
+<footer class="flex-container4">
 
-    <div>
-        <h2>Subscribe to our news letter to get latest updates and news</h2>
+    <div class="flex-container5">
+        
+        <div class="flex-container6">
+                <div class="flex-item4">
+                    <img class="logo2" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
+                </div>
 
-        <button>Enter Your Email</button>
-        <button>Subscribe</button>
-    </div>
+                <div class="flex-item5">
+                    <ul>
+                        <li class="home1"><a href="Homepage.html">Home</a></li>
+                        <li class="blog1"><a href="Blog.html">Blog</a></li>
+                        <li class="about1"><a href="Blogpost.html">About Us</a></li>
+                        <li class="contact1"><a href="Contact.html">Contact us</a></li>
+                        <li class="policy1">Privacy Policy</li>
+                    </ul>
+                </div>
+        </div>
 
-    <div>
-        <p>Lorem ipsum dolor</p>
-        <p>Lorem ipsum dolor</p>
-    </div>
+        <div class="flex-container7">
+                <div class="flex-item6">
+                    <h2>Subscribe to our news letter to get latest updates and news</h2>
+                    
+                        <button class="botão4">Enter Your Email</button>
+                        <button class="botão5">Subscribe</button>
+                </div>
+        </div>
 
-    <div>
-        <img src="./Imagens/Footer/Facebook.png" alt="Facebook">
-        <img src="./Imagens/Footer/Twitter.jpg" alt="Twitter">
-        <img src="./Imagens/Footer/Instagram.avif" alt="Instagram">
-        <img src="./Imagens/Footer/LinkedIn.png" alt="LinkedIn">
+        <div class="flex-container8">
+            <div class="flex-item7">
+                <p class="paragrafo2">Lorem ipsum dolor</p>
+                <p class="paragrafo3">Lorem ipsum dolor</p>
+            </div>
+                
+                <div class="flex-item8">                      
+                        <img class="facebook1" src="./Imagens/Footer/Facebook.png" alt="Facebook">
+                        <img class="twitter1" src="./Imagens/Footer/Twitter.jpg" alt="Twitter">
+                        <img class="instagram1" src="./Imagens/Footer/Instagram.avif" alt="Instagram">
+                        <img class="linkedin1" src="./Imagens/Footer/LinkedIn.png" alt="LinkedIn">
+                </div>
+        </div>
     </div>
-</footer> -->
+</footer>
 
     <script src="./Contact.js"></script>
     
