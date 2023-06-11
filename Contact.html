@@ -14,28 +14,50 @@
 
 <body>
     <p class="space"></p>
+    
     <header>
-        <div class="logo-area">
-            <img class="logo" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
-        </div>
-        <nav class="desktop-menu">
-            <div>
-                <ul>
-                    <li><a href="Homepage.html">Home</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="Blogpost.html">About Us</a></li>
-                    <li><a href="Contact.html">Contact us</a></li>
-                    <li><button class="button">Subscrive</button></li>
-                </ul>
+        <div class="container">
+            <div class="subcontainer">
+                <nav class="navbar">
+                    <img class="nav-branding" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="Homepage.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li><button class="button">Subscrive</button></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
+
+    <!-- <section id="Home">
+        <div class="container">
+            <div class="subcontainer">
+                <h1>Home</h1>
+            </div>
+        </div>
+    </section> -->
 
 <main> 
     
     <section>
-        <div class="flex-container1">
-            <div class="flex-item1">
+        <div class="conversation">
+            <div class="contactUs">
                 <h5>CONTACT US</h5>
                     <h1>Lets Start a Conversation</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
@@ -44,20 +66,19 @@
     </section>
 
     <section>
-        <div class="flex-container2">
-            <div class="flex-container3">
-                <div class="flex-item2">
+        <div class="contacts">
+            <div class="information">
+                <div class="schedule">
                         <p class="work">Working hours</p>
-
-                    <hr>
-                            <h5 class="days">Monday To Friday</h5>
-                            <h5>9:00 AM to 8:00 PM</h5>
-                            <p>Our Support Tean is available 24/7</p>
+                            <hr>
+                                <h5 class="days">Monday To Friday</h5>
+                                <h5>9:00 AM to 8:00 PM</h5>
+                                <p>Our Support Tean is available 24/7</p>
                 </div>
 
-                        <div class="flex-item3">
-                            <p class="call">Contact Us</p>
-                            <hr>
+                <div class="telephone">
+                        <p class="call">Contact Us</p>
+                            <hr class="linha">
                                 <h5>020 7993 2905</h5>
                                 <p>hello@finsweet.com</p>
                         </div>
@@ -67,10 +88,11 @@
     </section>
 
         <form>
-
+            <!-- Caso haja uma APIWeb externa teremos que colocar dentro da form o seguinte:
+            action="" method="post" -->
             <section>
                 <label>
-                    <input name="name" id="name" type="text" required value="Full Name">
+                    <input name="name" id="name" type="text" required placeholder="Full Name">
                 </label>
             </section>
 
@@ -81,14 +103,20 @@
             </section>
 
             <section>
-                <label >
-                    <input name="email" id="query" type="email" required value="Query Related">
+                <label>
+                    <select id="query" name="query related" required placeholder="Selection Options">
+                        <option value="Select">Selection Options</option>
+                        <option value="Business">Business</option>
+                        <option value="Startup">Startup</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Technology">Technology</option>
+                      </select>
                 </label>
             </section>
 
             <section>
                 <label>
-                    <input name="message" id="message" required value="Message">
+                    <input name="message" id="message" required placeholder="Message">
                 </label>
             </section>
 
@@ -97,16 +125,16 @@
         </form>
 </main>
 
-<footer class="flex-container4">
+<footer class="flex-container1">
 
-    <div class="flex-container5">
+    <div class="flex-container2">
         
-        <div class="flex-container6">
-                <div class="flex-item4">
+        <div class="flex-container3">
+                <div class="flex-item1">
                     <img class="logo2" src="./Imagens/Homepage/Logotipo.png" alt="Logotipo">
                 </div>
 
-                <div class="flex-item5">
+                <div class="flex-item2">
                     <ul>
                         <li class="home1"><a href="Homepage.html">Home</a></li>
                         <li class="blog1"><a href="Blog.html">Blog</a></li>
@@ -117,22 +145,22 @@
                 </div>
         </div>
 
-        <div class="flex-container7">
-                <div class="flex-item6">
+        <div class="flex-container4">
+                <div class="flex-item3">
                     <h2>Subscribe to our news letter to get latest updates and news</h2>
                     
-                        <button class="botão4">Enter Your Email</button>
-                        <button class="botão5">Subscribe</button>
+                        <button class="botão8">Enter Your Email</button>
+                        <button class="botão9">Subscribe</button>
                 </div>
         </div>
 
-        <div class="flex-container8">
-            <div class="flex-item7">
-                <p class="paragrafo2">Lorem ipsum dolor</p>
-                <p class="paragrafo3">Lorem ipsum dolor</p>
-            </div>
+        <div class="flex-container5">
+                <div class="flex-item4">
+                    <p class="text7">Lorem ipsum dolor</p>               
+                    <p class="text8">Lorem ipsum dolor</p>
+                </div>
                 
-                <div class="flex-item8">                      
+                <div class="flex-item5">                      
                         <img class="facebook1" src="./Imagens/Footer/Facebook.png" alt="Facebook">
                         <img class="twitter1" src="./Imagens/Footer/Twitter.jpg" alt="Twitter">
                         <img class="instagram1" src="./Imagens/Footer/Instagram.avif" alt="Instagram">

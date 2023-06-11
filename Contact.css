@@ -11,85 +11,114 @@ html{
     margin-bottom: 80px;
 }
 
-header {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    width: 100%;
-    height: 100px;
-    display: flex;
+header{
     position: fixed;
-    z-index: 10;
+    top: 0px;
+    width: 100vw;
     background-color: #232536;
-    margin-bottom: 24px;
+    z-index: 1;
 }
 
-.logo-area{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-area .logo{
-  margin: 0;
-  margin-left: 20px;
-  width: 140px;
-  height: 28.35px;
-}
-
-.desktop-menu {
-    width: 50%;
-}
-
-.desktop-menu ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    color: #232536;
-}
-
-.desktop-menu ul li {
+li{
     list-style: none;
 }
 
-.desktop-menu ul li a {
+.nav-link{
     text-decoration: none;
-    color: white;
+    left: 58.61%;
+    right: 38.26%;
+    top: 32.5%;
+    bottom: 32.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
-.desktop-menu ul li .button {
+.container{
+    width: 100vw;
+    height: 80px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding{
+    width: 140px;
+    height: 28.35px;
+    left: -50px;
+    top: 25px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+#home{
+    margin-top: 70px;
+}
+
+.navbar .button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 22px 60px;
+    padding: 14px 46px;
     gap: 12px;
     width: 179px;
     height: 56px;
-    margin-left: 0px;
     margin-top: 12px;
     margin-bottom: 12px;
+    margin-left: -5px;
     background: #FFFFFF;
     border: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
 }
 
-.flex-container1{
+
+.conversation{
     display: flex;
 }
 
-.flex-item1 h5{
+.contactUs h5{
     width: 134px;
     height: 20px;
-    margin-left: 653px;
-    margin-top: 128px;
-    margin-bottom: 12px;
-    margin-right: 653px;
+    margin: 128px 653px 12px 653px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -101,13 +130,10 @@ header {
     color: #232536;
 }
 
-.flex-item1 h1{
+.contactUs h1{
     width: 557px;
     height: 64px;
-    margin-left: 441px;
-    margin-top: 12px;
-    margin-bottom: 24px;
-    margin-right: 442px;
+    margin: 12px 442px 24px 441px;
     font-family: 'Sen';
     font-style: normal;
     font-weight: 700;
@@ -118,13 +144,10 @@ header {
     color: #232536;
 }
 
-.flex-item1 p{
+.contactUs p{
     width: 768px;
     height: 56px;
-    margin-left: 336px;
-    margin-top: 24px;
-    margin-bottom: 64px;
-    margin-right: 336px;
+    margin: 24px 336px 64px 336px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -134,21 +157,18 @@ header {
     color: #6D6E76;
 }
 
-.flex-container2{
+.contacts{
     display: flex;
     
 }
 
-.flex-container3{
+.information{
     display: flex;
-    margin-left: 336px;
-    margin-top: 24px;
-    margin-bottom: 64px;
-    margin-right: 336px;
+    margin: 24px 336px 64px 336px;
     background: #592EA9;    
 }
 
-.flex-item2 .work{
+.schedule .work{
     width: 96px;
     height: 20px;
     font-family: 'Inter';
@@ -158,13 +178,36 @@ header {
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.6;
-    margin-left: 64px;
-    margin-top: 48px;
-    margin-bottom: 32px;
-    margin-right: 0px;
+    margin: 48px 0 32px 64px;
 }
 
-.flex-item2 .days{
+hr{
+    width: 294px;
+    border: 1px solid #FFFFFF;
+    margin-left: 64px;
+    opacity: 0.1;
+}
+
+.linha{
+    width: 294px;
+    border: 1px solid #FFFFFF;
+    margin-left: 96px;
+    opacity: 0.1;
+}
+
+.schedule .days{
+    width: 223px;
+    height: 32px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 32px 0 0 64px;
+}
+
+.schedule h5{
     width: 223px;
     height: 32px;
     font-family: 'Sen';
@@ -174,27 +217,9 @@ header {
     line-height: 32px;
     color: #FFFFFF;
     margin-left: 64px;
-    margin-top: 32px;
-    margin-bottom: 0px;
-    margin-right: 0px;
 }
 
-.flex-item2 h5{
-    width: 223px;
-    height: 32px;
-    font-family: 'Sen';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    color: #FFFFFF;
-    margin-left: 64px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-}
-
-.flex-item2 p{
+.schedule p{
     width: 265px;
     height: 28px;
     font-family: 'Inter';
@@ -204,13 +229,10 @@ header {
     line-height: 28px;
     color: #FFFFFF;
     opacity: 0.6;
-    margin-left: 64px;
-    margin-top: 0px;
-    margin-bottom: 48px;
-    margin-right: 0px;
+    margin: 0 0 48px 64px;
 }
 
-.flex-item3 .call{
+.telephone .call{
     width: 76.7px;
     height: 20px;
     font-family: 'Inter';
@@ -220,13 +242,10 @@ header {
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.6;
-    margin-left: 99.35px;
-    margin-top: 48px;
-    margin-bottom: 32px;
-    margin-right: 290.96px;
+    margin: 48px 290.96px 32px 99.35px;
 }
 
-.flex-item3 h5{
+.telephone h5{
     width: 193px;
     height: 32px;
     font-family: 'Sen';
@@ -235,13 +254,10 @@ header {
     font-size: 20px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-left: 99.35px;
-    margin-top: 32px;
-    margin-bottom: 0px;
-    margin-right: 175px;
+    margin: 32px 175px 0 99.35px;
 }
 
-.flex-item3 p{
+.telephone p{
     width: 156.46px;
     height: 28px;
     font-family: 'Inter';
@@ -251,10 +267,7 @@ header {
     line-height: 28px;
     color: #FFFFFF;
     opacity: 0.6;
-    margin-left: 99.35px;
-    margin-top: 0px;
-    margin-bottom: 80px;
-    margin-right: 211.19px;
+    margin: 0px 211.19px 80px 99.35px;
 }
 
 label #name{
@@ -263,14 +276,11 @@ label #name{
     align-items: center;
     padding: 24px;
     gap: 10px;
-    width: 750px;
+    width: 768px;
     height: 76px;
     border: 1px solid rgba(109, 110, 118, 0.5);
     border-radius: 2px;
-    margin-left: 336px;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    margin-right: 336px;
+    margin: 32px 336px 16px 336px;
 }
 
 label #email{
@@ -279,14 +289,11 @@ label #email{
     align-items: center;
     padding: 24px;
     gap: 10px;
-    width: 750px;
+    width: 768px;
     height: 76px;
     border: 1px solid rgba(109, 110, 118, 0.5);
     border-radius: 2px;
-    margin-left: 336px;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    margin-right: 336px;
+    margin: 32px 336px 16px 336px;
 }
 
 label #query{
@@ -295,14 +302,11 @@ label #query{
     align-items: center;
     padding: 24px;
     gap: 10px;
-    width: 750px;
-    height: 76px;
+    width: 818px;
+    height: 125px;
     border: 1px solid rgba(109, 110, 118, 0.5);
     border-radius: 2px;
-    margin-left: 336px;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    margin-right: 336px;
+    margin: 32px 336px 16px 336px;
 }
 
 label #message{
@@ -311,77 +315,61 @@ label #message{
     align-items: center;
     padding: 24px;
     gap: 10px;
-    width: 750px;
+    width: 768px;
     height: 144px;
     border: 1px solid rgba(109, 110, 118, 0.5);
     border-radius: 2px;
-    margin-left: 336px;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    margin-right: 336px;
+    margin: 32px 336px 16px 336px;
 }
 
 button{
-    width: 768px;
+    width: 818px;
     height: 64px;
     background: #FFD050;
     border: 0px;
-    margin-left: 336px;
-    margin-top: 16px;
-    margin-bottom: 128px;
+    margin: 16px 0 128px 336px;
 }
 
-.flex-container4{
+.flex-container1{
+    width: 100%; 
     background: #232536;
+    margin-top: 15px;
 }
 
-.flex-container5{
-    
-}
-
-.flex-container6{
+.flex-container3{
     display: flex;
     height: 250px;
 }
 
-.flex-item4 img{
+.flex-item1 img{
     height: 28.35443115234375px;
     width: 140px;
     border-radius: 0px;
-    margin-left: 83px;
-    margin-top: 61px;
-    margin-bottom: 358.65px;
-    margin-right: 735px;
+    margin: 61px 735px 258.65px 83px;
 }
 
-.flex-item5 ul{
+.flex-item2 ul{
     width: 479px;
     height: 28.65px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 54.65px;
-    margin-right: 0px;
+    margin: 59px 0 54.65px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-item5 ul li {
+.flex-item2 ul li {
     list-style: none;
 }
 
-.flex-item5 ul li a {
+.flex-item2 ul li a {
     text-decoration: none;
     color: white;
 }
 
-.flex-item5 ul .home1 {
+.flex-item2 ul .home1 {
     width: 45px;
     height: 28px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 57px;
-    margin-right: 24px;
+    margin: 59px 24px 57px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -391,13 +379,10 @@ button{
     align-items: center;
 }
 
-.flex-item5 ul .blog1 {
+.flex-item2 ul .blog1 {
     width: 34px;
     height: 28px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 57px;
-    margin-right: 24px;
+    margin: 59px 24px 57px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -407,13 +392,10 @@ button{
     align-items: center;
 }
 
-.flex-item5 ul .about1 {
+.flex-item2 ul .about1 {
     width: 71px;
     height: 27.65px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 56.35px;
-    margin-right: 24px;
+    margin: 59px 24px 56.35px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -423,13 +405,10 @@ button{
     align-items: center;
 }
 
-.flex-item5 ul .contact1 {
+.flex-item2 ul .contact1 {
     width: 83px;
     height: 28px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 57px;
-    margin-right: 24px;
+    margin: 59px 24px 57px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -439,13 +418,10 @@ button{
     align-items: center;
 }
 
-.flex-item5 ul .policy1 {
+.flex-item2 ul .policy1 {
     width: 105px;
     height: 28px;
-    margin-left: 0px;
-    margin-top: 59px;
-    margin-bottom: 57px;
-    margin-right: 80px;
+    margin: 59px 80px 57px 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -453,32 +429,25 @@ button{
     line-height: 28px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #FFFFFF; 
 }
 
-.flex-container7{
+.flex-container4{
     display: flex;
 }
 
-.flex-item6 {
+.flex-item3{
     display: flex;
     width: 1280px;
     height: 256px;
     background: #6D6E76;
-    /* opacity: 0.5; */
-    margin-left: 80px;
-    margin-top: 0px;
-    margin-bottom: 160px;
-    margin-right: 80px;
+    margin: 0px 60px 160px 80px;
 }
 
-.flex-item6 h2 {
+.flex-item3 h2 {
     width: 562px;
     height: 96px;
-    margin-left: 64px;
-    margin-top: 70px;
-    margin-bottom: 80px;
-    margin-right: 64px;
+    margin: 70px 64px 80px 64px;
     font-family: 'Sen';
     font-style: normal;
     font-weight: 700;
@@ -490,52 +459,50 @@ button{
     color: #FFFFFF;
 }
 
-.flex-item6 .botão4 {
+.flex-item3 .botão8{
     display: flex;
     width: 323px;
     height: 56px;
-    margin-left: 64px;
-    margin-top: 84px;
-    margin-bottom: 116px;
-    margin-right: 24px;
+    margin: 84px 24px 116px 64px;
     align-items: center;
     box-sizing: border-box;
     border: 1px solid #4C4C4C;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 32px;
+    background-color: #e1e1e1;
 }
 
-.flex-item6 .botão5 {
+.flex-item3 .botão9{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 22px 60px;
+    padding: 16px 48px;
     gap: 12px;
     width: 179px;
     height: 56px;
-    margin-left: 24px;
-    margin-top: 84px;
-    margin-bottom: 116px;
-    margin-right: 64px;
+    margin: 84px 64px 116px 24px;
     background: #FFD050;
     border: 0px;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 } 
 
-.flex-container8{
+.flex-container5{
     display: flex;
 }
 
-.flex-item7{
-    /* display: flex; */
-}
-
-.paragrafo2{
+.text7{
     display: flex;
     width: 361px;
     height: 28px;
-    margin-left: 80px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 350px;
+    margin: 0 350px 0 80px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -545,14 +512,11 @@ button{
     opacity: 0.7;    
 }
 
-.paragrafo3{
+.text8{
     display: flex;
     width: 361px;
     height: 28px;
-    margin-left: 80px;
-    margin-top: 0px;
-    margin-bottom: 56px;
-    margin-right: 0px;
+    margin: 0 0 56px 80px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -562,7 +526,7 @@ button{
     opacity: 0.7;    
 }
 
-.flex-item8{
+.flex-item5{
     display: flex;
 }
 
@@ -570,10 +534,7 @@ button{
     display: flex;
     width: 16px;
     height: 16px;
-    margin-left: 415px;
-    margin-top: 0px;
-    margin-bottom: 84.10px;
-    margin-right: 0px;
+    margin: 0 0 84.10px 415px;
     background: #ffffff;
 }
 
@@ -581,10 +542,7 @@ button{
     display: flex;
     width: 16px;
     height: 16px;
-    margin-left: 26.67px;
-    margin-top: 0px;
-    margin-bottom: 85.5px;
-    margin-right: 0px;
+    margin: 0 0 85.5px 26.67px;
     background: #ffffff;
 }
 
@@ -592,10 +550,7 @@ button{
     display: flex;
     width: 16px;
     height: 16px;
-    margin-left: 26.67px;
-    margin-top: 0px;
-    margin-bottom: 84px;
-    margin-right: 0px;
+    margin: 0 0 84px 26.67px;
     background: #ffffff;
 }
 
@@ -603,9 +558,199 @@ button{
     display: flex;
     width: 16px;
     height: 16px;
-    margin-left: 26.67px;
-    margin-top: 0px;
-    margin-bottom: 84px;
-    margin-right: 0px;
+    margin: 0 0 84px 26.67px;
     background: #ffffff;
+}
+
+@media (max-width: 1200px) {
+
+    header{
+        width: 100vw;
+    }
+
+    .conversation{
+        margin-left: -120px;
+    }
+
+    .contacts{
+        margin-left: -125px;
+    }
+
+    form{
+        margin-left: -125px;
+    }
+
+    .flex-item2 ul{
+        margin-left: -240px;
+    }
+    
+    .flex-item3{
+        flex-direction: column;
+        flex-flow: wrap;
+        height: 400px;
+    }
+    
+    .flex-item3 h2{
+        margin-left: 250px;
+    }
+    
+    .flex-item3 .botão8 {
+        margin-left: 250px;
+        margin-top: 0px;
+    }
+    
+    .flex-item3 .botão9 {
+        margin-top: 0px;
+    } 
+    
+    .flex-item5 {
+        margin-left: -245px;
+    }
+
+        
+}
+        
+@media (max-width: 576px) {
+
+    header{
+        width: 100vw;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #232536;;
+        width: 55%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+.contactUs h5{
+    margin-left: 350px;
+}
+
+.contactUs h1{
+    margin-left: 150px;
+    width: 530px;
+}
+
+.contactUs p{
+    margin-left: 255px;
+    margin-top: 70px;
+    width: 330px;
+}
+
+.contacts{
+    margin-left: -275px;
+}
+
+.information{
+    flex-direction: column;
+}
+
+.schedule{
+    margin-left: 30px;
+}
+
+form{
+    margin-left: -275px;
+}
+
+label #name{
+    width: 415px;
+}
+
+label #email{
+    width: 415px;
+}
+
+label #query{
+    width: 465px;
+}
+
+label #message{
+    width: 415px;
+}
+
+button{
+    width: 465px;
+}
+        
+.flex-container3{
+    flex-direction: column;
+}
+
+.flex-item2{
+    margin-top: 100px;
+}
+
+.flex-item2 ul{
+    margin-left: 85px;
+    margin-top: -350px;
+}
+
+.flex-container4{
+    flex-direction: column;
+    height: 700px;
+}
+
+.flex-item3{
+    flex-direction: column;
+    flex-flow: wrap;
+    height: 450px;
+    width: 420px;
+}
+
+.flex-item3 h2{
+    margin-left: 50px;
+    width: 300px;
+}
+
+.flex-item3 .botão8 {
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 315px;
+}
+
+.flex-item3 .botão9 {
+    margin-top: 110px;
+    margin-left: -338px;
+} 
+
+.flex-item4 {
+    margin-top: -175px;
+}
+
+.flex-item5 {
+    margin-left: -850px;
+    margin-top: -165px;
+}
+    
 }
